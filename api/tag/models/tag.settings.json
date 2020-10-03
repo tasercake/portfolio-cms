@@ -11,6 +11,14 @@
   "attributes": {
     "Name": {
       "type": "string"
+    },
+    "projects": {
+      "via": "tags",
+      "collection": "project"
+    },
+    "posts": {
+      "via": "tags",
+      "collection": "post"
     }
   }
 }

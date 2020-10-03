@@ -525,6 +525,86 @@
           "Name": {
             "type": "string"
           },
+          "projects": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "Title"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Title": {
+                  "type": "string"
+                },
+                "URL": {
+                  "type": "string"
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "Thumbnail": {
+                  "type": "string"
+                },
+                "Start": {
+                  "type": "string"
+                },
+                "End": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "posts": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "Body",
+                "Slug"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "Title": {
+                  "type": "string"
+                },
+                "Body": {
+                  "type": "string"
+                },
+                "Slug": {
+                  "type": "uid"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "created_by": {
             "required": [
               "id",
@@ -619,6 +699,18 @@
         "properties": {
           "Name": {
             "type": "string"
+          },
+          "projects": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "posts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"
